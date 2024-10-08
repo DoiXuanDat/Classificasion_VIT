@@ -8,24 +8,9 @@ This project using Garbage classification dataset from
 kaggle https://www.kaggle.com/datasets/yashkangale20/garbage-classification
 
 The structure of dataset was shown as follows:
-data
-├── Class_1
-│   ├── img_1-1.jpg
-│   ├── img_1-2.jpg
-│   └── ...
-├── Class_2
-│   ├── img_2-1.jpg
-│   ├── img_2-2.jpg
-│   └── ...
-├── Class_3
-│   ├── img_3-1.jpg
-│   ├── img_3-2.jpg
-│   └── ...
-├── Class_4
-│   ├── img_4-1.jpg
-│   ├── img_4-2.jpg
-│   └── ...
-└── ...
+- **data:** The root directory containing all class-specific subdirectories.
+- **Class_1, Class_2, Class_3, ...:** Subdirectories representing different classes or categories of data.
+- **img_1-1.jpg, img_1-2.jpg, ...:** Image files within each class.
   
 ## Hyperparameters
 
