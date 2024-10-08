@@ -37,8 +37,6 @@ if __name__ == "__main__":
     input_folder = "data"
     output_folder = "data/resized"
     new_size = (224, 224)  # Specify the desired width and height
-
     # Resize images
     resize_images(input_folder, output_folder, new_size)
-
     print("Images resized successfully.")

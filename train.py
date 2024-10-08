@@ -192,7 +192,6 @@ def setup_seed(seed=3407):
     torch.backends.cudnn.benchmarks = False
     torch.backends.cudnn.enabled = False
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 data_dir = "data/resized"
 log_path = os.path.join("Logs", "train_" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + ".log")

@@ -10,7 +10,6 @@ def save_checkpoint(model, epoch: int, outdir: str):
     cpfile = os.path.join(outdir, f'model_{epoch:3d}.pt')
     torch.save(model.state_dict(), cpfile)
 
-
 def set_logger(log_path):
     if os.path.exists(log_path) is True:
         os.remove(log_path)

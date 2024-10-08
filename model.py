@@ -4,7 +4,6 @@ import torch.nn as nn
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
 class Encoder(nn.Module):
     def __init__(self, num_hidden_layers: int, hidden_size: int, intermediate_size: int, num_attention_heads: int = 4,
                  attention_probs_dropout_prob: float = 0.0, hidden_dropout_prob: float = 0.0, qkv_bias: bool = True):

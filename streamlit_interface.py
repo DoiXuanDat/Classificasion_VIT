@@ -70,7 +70,7 @@ def get_prediction(model, device, image):
 
 
 def main():
-    st.markdown('<p class="big-font">♻️ Waste Classification App</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-font">♻️ Garbage Classification App</p>', unsafe_allow_html=True)
     st.write("Upload an image to classify the type of waste")
 
     # Load model

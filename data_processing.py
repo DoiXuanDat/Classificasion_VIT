@@ -40,7 +40,6 @@ def prepare_data(root_dir: str, batch_size: int = 128, num_workers: int = 12, sh
 
     return trainloader, valloader, testloader, dataset.classes
 
-
 def prepare_test_data(root_dir: str, batch_size: int = 4, num_workers: int = 2):
     # Define the transformations
     transform = transforms.Compose([
