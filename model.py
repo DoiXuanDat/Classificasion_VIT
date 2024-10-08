@@ -40,7 +40,6 @@ class EncoderBlock(nn.Module):
 
         return X
 
-
 class MLP(nn.Module):
     def __init__(self, hidden_size: int, intermediate_size: int, hidden_dropout_prob: int = 0.0):
         super(MLP, self).__init__()
@@ -55,7 +54,6 @@ class MLP(nn.Module):
         X = self.fc2(X)
         X = self.dropout(X)
         return X
-
 
 class Scaled_Dot_Product_Attention(nn.Module):
     def __init__(self, hidden_size: int, attention_head_size: int, dropout_prob: float = 0.0, bias=True):

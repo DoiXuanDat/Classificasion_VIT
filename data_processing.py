@@ -20,7 +20,6 @@ def prepare_data(root_dir: str, batch_size: int = 128, num_workers: int = 12, sh
     ])
 
     dataset = ImageFolder(root_dir)
-
     # Calculate the sizes of training, validation, and test sets
     dataset_size = len(dataset)
     train_size = int(0.7 * dataset_size)

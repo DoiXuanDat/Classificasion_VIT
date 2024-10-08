@@ -27,7 +27,6 @@ def set_logger(log_path):
         stream_handler.setFormatter(logging.Formatter('%(message)s'))
         logger.addHandler(stream_handler)
 
-
 def lastest_checkpoint(model_dir="./Logs"):
     files = [f for f in os.listdir(model_dir) if 'model' in f]
     files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]))

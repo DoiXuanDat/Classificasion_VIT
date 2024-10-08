@@ -196,7 +196,6 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 data_dir = "data/resized"
 log_path = os.path.join("Logs", "train_" + datetime.now().strftime('%Y-%m-%d_%H-%M-%S') + ".log")
 num_workers = 0
-
 batch_size = 1280
 epochs = 80
 learning_rate = 1e-4
